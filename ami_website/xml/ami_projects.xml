@@ -1,0 +1,20 @@
+<ami_projects>
+	<project number="1">
+		<name>Website</name>
+		<leader>YueTang</leader>
+		<startingDate>2015.01.01</startingDate>
+		<description>THe Description of project1.</description>
+		<resource name="Image">
+			<format path="img/s1.png" />
+		</resource>
+	</project>
+	<project number="2">
+		<name>Dating Website</name>
+		<leader>JDY</leader>
+		<startingDate>2014.11.11</startingDate>
+		<description>THe Description of project2.</description>
+		<resource name="Image">
+			<format path="img/s2.png" />
+		</resource>
+	</project>
+</ami_projects>
