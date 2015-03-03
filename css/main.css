@@ -14,12 +14,54 @@
 .form-group{
 	width: 100%;
 	height: 70px;
+	float: left;
 }
 
 ul{
 	list-style: none;
 	padding: 0px;
 }
+
+/*join-us*/
+#join-us{
+	margin: 0 auto;
+	width: 380px;
+	height: 580px;
+}
+	#join-us h2{
+		font-size: 80px;
+		letter-spacing: 15px;
+		padding: 0 0 40px 0px;
+		font-family:华文中宋，微软雅黑;
+	}
+
+	#join-us .form-text{
+		float: left;
+		padding: 0 20px 0 0px;
+		line-height: 25px;
+		font-size: 25px;
+		font-family:华文中宋，微软雅黑;
+
+	}
+	#join-us .form-input{
+		float: right;
+		width: 280px;
+	}
+
+	#join-us [type=submit]{
+	margin: 20px 0 0 0;
+	display: block;
+	width: 380px;
+	height: 30px;
+	cursor: pointer;
+	background-color: #98d82a;
+	border: 1px solid #80b722;
+	border-radius: 3px;
+	color: #fff;
+	}
+
+/*join-us-end*/
+
 
 /*footer*/
 #footer{
