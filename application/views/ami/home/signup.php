@@ -3,7 +3,6 @@
 
 <h2>加入我们</h2>
 
-	<form>
 <?php if ($email_taken) : ?>
 	<p>Change your email.</p><br />
 <?php endif  ?>
@@ -22,7 +21,7 @@ echo form_open('http://localhost',$attributes);
 <div class="form-group">
 	<label class="form-text">邮箱:</label>
 	<input class="form-input email" type='text' name='email' id='email' value="" />
-	<p class="error-info">不合法的邮件地址</p>
+	<p class="error-info">不合法的邮箱地址</p>
 </div>
 <div class="form-group">
 	<label class="form-text">手机:</label>

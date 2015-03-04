@@ -5,7 +5,7 @@
 <title>ZhaoXin</title>
 </head>
 <body>
-	<h2>Here's all the newbies.</h2>
+	<h2>新成员</h2>
 	<form action="http://localhost/index.php/ami_work/getNew" method="POST">
 	<table>
 	<th>NAME</th>

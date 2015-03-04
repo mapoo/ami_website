@@ -3,7 +3,7 @@
 	padding: 0;
 	font-size: 14px;
 	text-decoration: none;
-	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+	font-family:"Microsoft YaHei",华文细黑,"MicrosoftJhengHei",微软雅黑,STHeiti,MingLiu;
 }
 
 .container{
@@ -32,7 +32,12 @@ ul{
 		font-size: 80px;
 		letter-spacing: 15px;
 		padding: 0 0 40px 0px;
-		font-family:仿宋，微软雅黑;
+		font-family:华文细黑;
+		text-align: center;
+	}
+
+	#join-us .form-group{
+		height:50px;
 	}
 
 	#join-us .form-text{
@@ -40,7 +45,7 @@ ul{
 		padding: 0 20px 0 0px;
 		line-height: 25px;
 		font-size: 25px;
-		font-family:华文中宋，微软雅黑;
+		font-family:微软雅黑;
 
 	}
 	#join-us .form-input{
@@ -58,6 +63,10 @@ ul{
 	border: 1px solid #80b722;
 	border-radius: 3px;
 	color: #fff;
+	}
+
+	#join-us .error-info{
+		float: right;
 	}
 
 /*join-us-end*/
@@ -184,19 +193,21 @@ ul{
 	padding: 70px 0 0 130px;
 }
 
-#no-account a:link,#no-account a:visited{
+
+
+.no-account a:link,.no-account a:visited{
 	color: #98d82a;
 }
 
-.no-account a:hover{
-	background-color: #80b722;
+.no-account a:hover,.no-account a:active{
 	color:#fff;
 	text-decoration: none;
+	background-color: #98d82a;
 }
 
+
 #submit{
-	margin: 20px 0 0 0;
-	display: block;
+	margin: 10px 0 0 0;
 	width: 70px;
 	height: 30px;
 	cursor: pointer;

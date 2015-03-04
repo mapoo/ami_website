@@ -3,7 +3,7 @@
 //检验邮件地址合法性
 var error = $(".error-info");
 error.hide();
-$(".password").click(function(){
+$(".password").focus(function(){
 	var $emailAddress = $(".email").val();
 	if(emailAddressTest($emailAddress)){
 		error.hide();
