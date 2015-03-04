@@ -3,7 +3,6 @@
 
 <h2>加入我们</h2>
 
-	<form>
 <?php if ($email_taken) : ?>
 	<p>Change your email.</p><br />
 <?php endif  ?>
