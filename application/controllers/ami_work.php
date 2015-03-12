@@ -118,14 +118,19 @@ class Ami_work extends CI_Controller {
 				if ($query !== FALSE)
 				{
 					$data['query'] = $query;
+					$this->load->view('ami/header',$data);
 					$this->load->view('ami/work/work2',$data);
 				}
-				else
+				else{
+					$this->load->view('ami/header',$data);
 					$this->load->view('ami/work/work2_none');
+				}
+					
+				
 					
 			}
 			else
-			{
+			{	$this->load->view('ami/work/work2_none');
 				$this->load->view('ami/work/work2_none');
 			}
 		}

@@ -50,23 +50,22 @@ class Ami_home extends CI_Controller {
 					$data['email_taken']=TRUE;
 				}
 			}
-			$this->load->view('ami/header',$data);
-			$this->load->view('ami/upright_login',$data);	
+			//$this->load->view('ami/upright_login',$data);	
 			$this->load->view('ami/home/display',$data);
-			$this->load->view('ami/home/signup',$data);
-			$this->load->view('ami/footer',$data);
+			//$this->load->view('ami/home/signup',$data);
+			//$this->load->view('ami/footer',$data);
 		}
 		//user already login in
 		else
 		{
+			$this->load->view('ami/header',$data);
 			$name=$this->session->userdata('name');
 			$level=$this->session->userdata('level');
 			$data['name'] = $name;
 			$data['level'] = $level;
 			#$this->load->view('ami/working',$data);
-			$this->load->view('ami/header',$data);
 			$this->load->view('ami/upright_logined',$data);	
-			$this->load->view('ami/home/display',$data);
+			
 			#$this->load->view('ami/home/signup',$data);
 			$this->load->view('ami/footer',$data);
 		}
@@ -101,14 +100,18 @@ class Ami_home extends CI_Controller {
 			else
 			{
 				$data['old_account']=$this->input->post('account');
+				$this->load->view('ami/header');
 				$this->load->view('ami/login/login_form',$data);
+				$this->load->view('ami/footer');
 			}
 				
 		}
 		//form waits to be filled.
 		else
 		{
+			$this->load->view('ami/header');
 			$this->load->view('ami/login/login_form',$data);
+			$this->load->view('ami/footer');
 		}
 	}
 }

@@ -1,19 +1,3 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="This is the homepage of Association of Mobile Internet @ Shanghai Jiaotong University">
-	<meta name="keyword" content="mobile, internet, SJTU, startup">
-	<title><?=$title?></title>
-	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="../../css/main.css" media="screen">
-
-
-</head>
-<body>
-<div>
-	<p>ami</p>
-</div>
 <div id="container" class="container">
 <h2 id="login-head" class="login-head">登陆</h2>
 <hr noshade="noshade" />
@@ -41,17 +25,4 @@
 </div>
 
 
-
-<?php if (isset($account)) :?>
-<h2><?="ACCOUNT: ".$account?></h2>
-<?php endif ?>
-<?php if (isset($password)) :?>
-<h2><?="PASSWORD: ".$password?></h2>
-<?php endif ?>
-
 </div>
-
-<script type="text/javascript" src="../../js/jquery-2.1.3.min.js" ></script>
-<script type="text/javascript" src="../../js/ami.js" ></script>
-</body>
-</html>

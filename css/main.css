@@ -1,3 +1,16 @@
+/*
+architecture
+header
+newbie-list
+join-us
+footer
+sign-up
+
+
+*/
+
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -21,6 +34,66 @@ ul{
 	list-style: none;
 	padding: 0px;
 }
+/*header*/
+#header{
+	height: 60px;
+	border-bottom: 1px solid #ededed;
+
+}
+	#header img{
+		height: 50px;
+	}
+.container{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*header ends*/
+
+
+
+
+/*newbie-list*/
+#newbie-list table{
+	width: 100%;
+	border:1px solid #7cae25;
+}
+
+	#newbie-list th{
+		border:1px solid #696969;
+		padding: 15px 7px 2px 7px;
+		background-color: #7bab28;
+		color: #fff;
+		text-align: center;
+		font-size: 15px;
+	}
+	
+	#newbie-list tr{
+		text-align: center;
+	}
+
+	#newbie-list td{
+		border:1px solid #929292;
+		width: 20%;
+		padding: 15px 7px 2px 7px;
+	}
+
+	#newbie-list [type=submit]{
+		margin: 30px 40% 80px 40%;
+		width: 20%;
+		height: 30px;
+		cursor: pointer;
+		background-color: #7bab28;
+		border: 1px solid #80b722;
+		border-radius: 3px;
+		color: #fff;
+	}
+
+
+
+
+/*newbie-list-end*/
+
 
 /*join-us*/
 #join-us{
@@ -211,7 +284,7 @@ ul{
 	width: 70px;
 	height: 30px;
 	cursor: pointer;
-	background-color: #98d82a;
+	background-color: #7bab28;
 	border: 1px solid #80b722;
 	border-radius: 3px;
 	color: #fff;
