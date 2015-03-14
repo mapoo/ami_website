@@ -9,7 +9,7 @@ sign-up
 
 */
 
-
+html, body{height:100%; }
 
 *{
 	margin: 0;
@@ -43,6 +43,8 @@ ul{
 	#header img{
 		height: 50px;
 	}
+
+
 .container{
 	width: 980px;
 	margin: 0 auto;
@@ -210,18 +212,22 @@ ul{
 /*
 登陆页面
 */
-#container h2{
-	font-size: 28px;
-	font-family: 华文中宋，微软雅黑;
-	padding:20px 0px 0px 20px;
-	letter-spacing: 10px;
-	font-weight: bold;
+#login-page{
+	height: 85%;
 }
-#container hr{
-	width: 780px;
-	size:1px;
-	color:#ededed;
-	margin-top: 0px;
+
+	#login-page h2{
+		font-size: 28px;
+		font-family: 华文中宋，微软雅黑;
+		padding:20px 0px 0px 20px;
+		letter-spacing: 10px;
+		font-weight: bold;
+	}
+	#login-page hr{
+		width: 780px;
+		size:1px;
+		color:#ededed;
+		margin-top: 0px;
 
 }
 #login{

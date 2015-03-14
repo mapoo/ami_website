@@ -1,4 +1,4 @@
-<div id="container" class="container">
+<div id="login-page" class="container">
 <h2 id="login-head" class="login-head">登陆</h2>
 <hr noshade="noshade" />
 <div id="login" class="login">
@@ -21,7 +21,7 @@
 
 
 <div id="no-account" class="no-account">
-	<p>&gt还没有账号？<a href="#">立即注册</a></p>
+	<p>&gt还没有账号？<a href="http://localhost/#!join-us">立即注册</a></p>
 </div>
 
 

@@ -11,7 +11,7 @@
 
 <div id="header">
 <div class="container">
-	<img src="/img/AMI.PNG" alt="">
+	<a href="http://localhost/#"><img src="/img/AMI.PNG" alt=""></a>
 </div>
 </div>
 

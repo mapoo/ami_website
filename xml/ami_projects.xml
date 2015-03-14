@@ -1,6 +1,6 @@
 <ami_projects>
 
-	<project number="1">
+	<project number="01">
 		<name> InnoXYZ 协作平台</name>
 		<leader>YueTang</leader>
 		<startingDate>2015.01.01</startingDate>
@@ -13,7 +13,7 @@
 	</project>
 
 
-	<project number="2">
+	<project number="02">
 		<name>思源公益图书馆</name>
 		<leader>JDY</leader>
 		<startingDate>2014.11.11</startingDate>
@@ -23,8 +23,8 @@
 		</resource>
 	</project>
 
-	<project number="2">
-		<name>思源公益图书馆</name>
+	<project number="03">
+		<name>交大传承</name>
 		<leader>JDY</leader>
 		<startingDate>2014.11.11</startingDate>
 		<description>思源公益图书馆是为长期公益项目-思源公益打造的移动图书馆平台，旨在为公益捐书提供统一的平台。简化了捐书者的捐书流程，更可以追踪自己所捐赠的书本；同时也提供志愿者和图书管理员一个统一便捷的管理平台。</description>
