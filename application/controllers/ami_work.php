@@ -140,23 +140,35 @@ class Ami_work extends CI_Controller {
 	{
 		if ($this->session->userdata('authenticated') === FALSE )
 		{
-	
+			$this->load->view('ami/bug');
 		}
 		else
 		{
-			if ( $this->input->post('select') != FALSE)
+			if ( $this->input->post('select') != FALSE )
 			{
 				$list = array();
-				foreach ($this->input->post('select') as $department )
+				foreach ( $this->input->post('select') as $department )
 				{
-					$query = $this->ami_model->getIdByDepartment($department);
+					var_dump($department);
+					$temp_num=intval($department,10);
+					var_dump($temp_num);
+					$query = $this->ami_model->getIdNameByDepartment($temp_num);
 					if ($query->num_rows() > 0)
 						$list = array_merge($list, $query->result() );
 				}
 				$data['list'] = $list;
-				$this->load->view("ami/work/work4",$data);
+				$this->load->view("ami/work/work4_one",$data);
+				$this->load->view("ami/work/work4_two",$data);
 				//all needed id in $list
-				
+			}
+			else if ( $this ->input->post('send') != FALSE)
+			{
+				$this->load->view("ami/work/work4_one");
+				$this->load->view("ami/work/work4_two");			
+			}
+			else
+			{
+				$this->load->view("ami/work/work4_one");
 			}
 		}
 

@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -5,7 +6,7 @@
 </head>
 <body>
 <h2>Diliver Text</h2>
-<form>
+<form action="http://localhost/index.php/ami_work/deliverText" method="POST">
 <table>
 <tr>
 	<td>D1<input type="checkbox" name="select[]" value="1" /></td>

@@ -20,6 +20,8 @@ if ($count == 4 ) :?>
 <input type="textera" name="message" /><br />
 <input type="submit" value="send" /><br />
 </form>
+</body>
+</html>
 
 
 
