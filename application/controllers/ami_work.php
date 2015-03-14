@@ -23,7 +23,7 @@ class Ami_work extends CI_Controller {
 				$data['title'] = "WORK";
 				$id = $this->session->userdata('id');
 				$bag = array(
-					'name' => $this->input->post('name')	
+					'name' => $this->input->post('name'),	
 					'name' => $this->input->post('name'),
 					'email' => $this->input->post('email'),
 					'cellphone' => $this->input->post('cellphone'),
@@ -41,21 +41,14 @@ class Ami_work extends CI_Controller {
 			$data['title'] = "WORK";
 			$temp=array(
 					$this->session->userdata('id'),
-<<<<<<< HEAD
-					array('cellphone','name','email')
-=======
 					array('cellphone','name','email','department')
->>>>>>> ty
 				);
 				$info = $this->ami_model->getInfoByIdSelect( $temp );
 				$row = $info->row_array();
 			$data['name']=$row['name'];
 			$data['cellphone']=$row['cellphone'];
 			$data['email']=$row['email'];
-<<<<<<< HEAD
-=======
 			$data['department']=$row['department'];
->>>>>>> ty
 			$this->load->view('ami/work/work1',$data);
 		}
 		
@@ -214,10 +207,6 @@ class Ami_work extends CI_Controller {
 			$name = $this->session->userdata('name');
 			$level= $this->session->userdata('level');
 			$data['name']=$name;
-			if ( $level == 0 ) //have all options
-			{
-				$this->load->view("ami/work/work_frame",$data);
-			}
 			$data['level']=$level;
 			$this->load->view("ami/work/work_frame",$data);
 			

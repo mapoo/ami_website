@@ -9,23 +9,6 @@
 <?php endif ?>
 
 <form action="http://localhost/index.php/ami_work/completeInfo" method="POST" >
-<<<<<<< HEAD
-<table>
-<tr>
-<td>name: </td>
-<td><input type="text" name="name" value="<?php echo $name;?>" /></td>
-</tr>
-<tr>
-<td>email: </td>
-<td><input type="text" name="email" value="<?php echo $email;?>" /></td>
-</tr>
-<tr>
-<td>cellphone: </td>
-<td><input type="text" name="cellphone" value="<?php echo $cellphone;?>" /></td>
-</tr>
-</table>
-=======
-
 
 name:<input type="text" name="name" value="<?php echo $name;?>" /><br />
 
@@ -40,7 +23,6 @@ Department:
 <option value="4" <?php if ($department==4) echo 'selected="selected"'?>>财政部</option>
 </select><br />
 
->>>>>>> ty
 <input type="submit" value="SURE" />
 
 
