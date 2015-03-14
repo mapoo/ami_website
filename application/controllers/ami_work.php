@@ -17,12 +17,17 @@ class Ami_work extends CI_Controller {
 		else
 		{
 			if ( $this->input->post('name') != FALSE )	
+			if ( $this->input->post('name') != FALSE&&$this->input->post('email') != FALSE&&$this->input->post('cellphone') != FALSE &&$this->input->post('department') != FALSE)	
 			{
 				$data['para'] = "I get your form.";
 				$data['title'] = "WORK";
 				$id = $this->session->userdata('id');
 				$bag = array(
 					'name' => $this->input->post('name')	
+					'name' => $this->input->post('name'),
+					'email' => $this->input->post('email'),
+					'cellphone' => $this->input->post('cellphone'),
+					'department' => $this->input->post('department')
 				);
 				$this->ami_model->updateById( $id, $bag );
 				$this->session->unset_userdata("authenticated");
@@ -36,13 +41,21 @@ class Ami_work extends CI_Controller {
 			$data['title'] = "WORK";
 			$temp=array(
 					$this->session->userdata('id'),
+<<<<<<< HEAD
 					array('cellphone','name','email')
+=======
+					array('cellphone','name','email','department')
+>>>>>>> ty
 				);
 				$info = $this->ami_model->getInfoByIdSelect( $temp );
 				$row = $info->row_array();
 			$data['name']=$row['name'];
 			$data['cellphone']=$row['cellphone'];
 			$data['email']=$row['email'];
+<<<<<<< HEAD
+=======
+			$data['department']=$row['department'];
+>>>>>>> ty
 			$this->load->view('ami/work/work1',$data);
 		}
 		
@@ -199,6 +212,9 @@ class Ami_work extends CI_Controller {
 			{
 				$this->load->view("ami/work/work_frame",$data);
 			}
+			$data['level']=$level;
+			$this->load->view("ami/work/work_frame",$data);
+			
 
 		}
 				
