@@ -12,15 +12,15 @@
 <table>
 <tr>
 <td>name: </td>
-<td><input type="text" name="name" value="" /></td>
+<td><input type="text" name="name" value="<?php echo $name;?>" /></td>
 </tr>
 <tr>
 <td>email: </td>
-<td><input type="text" name="email" value="" /></td>
+<td><input type="text" name="email" value="<?php echo $email;?>" /></td>
 </tr>
 <tr>
 <td>cellphone: </td>
-<td><input type="text" name="cellphone" value="" /></td>
+<td><input type="text" name="cellphone" value="<?php echo $cellphone;?>" /></td>
 </tr>
 </table>
 <input type="submit" value="SURE" />

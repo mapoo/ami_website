@@ -34,6 +34,15 @@ class Ami_work extends CI_Controller {
 				//redirect("url","location");
 			}
 			$data['title'] = "WORK";
+			$temp=array(
+					$this->session->userdata('id'),
+					array('cellphone','name','email')
+				);
+				$info = $this->ami_model->getInfoByIdSelect( $temp );
+				$row = $info->row_array();
+			$data['name']=$row['name'];
+			$data['cellphone']=$row['cellphone'];
+			$data['email']=$row['email'];
 			$this->load->view('ami/work/work1',$data);
 		}
 		
