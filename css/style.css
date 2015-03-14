@@ -7,6 +7,33 @@ html, body{
 	overflow: hidden;
 }
 
+
+/*login-upright*/
+
+#login-upright{
+		width: 80px;
+		text-align: center;
+		display: block;
+		font-size: 14px;
+		border: 0 none;
+		outline: none;
+		display: block;
+		padding-top: 22px;
+		text-decoration: none;
+		color: #4d4d4f;
+		line-height: 65px;
+		vertical-align: middle;
+		padding: 0;
+		margin: 0;
+		float: right;
+		font-weight: bolder;
+
+}
+	#login-upright:hover{
+		background-color: #303032;
+		color: #fff;
+	}
+
 #page {
 	padding: 0;
 	margin: 0;
@@ -93,7 +120,7 @@ p { padding: 0; margin: 0;}
 		position: absolute;
 		display: block;
 		top: 0;
-		width: 735px;
+		width: 700px;
 		left: 485px;
 	}
 	#header ul {

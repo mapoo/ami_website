@@ -32,7 +32,7 @@
 							<li><a data-page-title="Join us" data-anchor="join-us" rel="#!join-us" href="#!join-us">Join Us</a></li>
 						</ul>
 					</nav>
-					<a href="http://localhost/index.php/ami_home/login">Login</a>
+					<a id="login-upright" href="http://localhost/index.php/ami_home/login">LOGIN</a>
 				</div> <!-- .head-wrap -->
 			</div> <!-- .wrap < header -->
 		</div>
