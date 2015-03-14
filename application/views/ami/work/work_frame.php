@@ -12,11 +12,11 @@ $(document).ready( function() {
 <h1>This is the work space.</h1>
 <h3>Welcome,<?= $name?></h3>
 
-<a href="http://localhost/index.php/ami_work/homepage">完善信息</a>
-<a href="http://localhost/index.php/ami_work/homepage">改变密码</a>
+<a href="http://localhost/index.php/ami_work/mainpage">完善信息</a>
+<a href="http://localhost/index.php/ami_work/mainpage">改变密码</a>
 <?php if ($level == 0) {?>
-<a href="http://localhost/index.php/ami_work/homepage">招新情况</a>
-<a href="http://localhost/index.php/ami_work/homepage">发送短信</a>
+<a href="http://localhost/index.php/ami_work/mainpage">招新情况</a>
+<a href="http://localhost/index.php/ami_work/mainpage">发送短信</a>
 <?php } ?>
 <br />
 <!--
