@@ -153,7 +153,7 @@ class Ami_work extends CI_Controller {
 		}
 		else
 		{
-			if ( $this->input->post('select') != FALSE )
+			if ( $this->input->post('select') != FALSE ) // select the department, no members
 			{
 				$list = array();
 				foreach ( $this->input->post('select') as $department )
@@ -170,10 +170,16 @@ class Ami_work extends CI_Controller {
 				$this->load->view("ami/work/work4_two",$data);
 				//all needed id in $list
 			}
-			else if ( $this ->input->post('send') != FALSE)
+			else if ( $this ->input->post('send') != FALSE && $this->input->post('message') != FALSE) //receivers are selected
 			{
-				$this->load->view("ami/work/work4_one");
-				$this->load->view("ami/work/work4_two");			
+				//send text.
+				$message = $this->input->post('message');
+				var_dump($message);
+				foreach ($this->input->post('send') as $receiver)
+				{
+					$this->ami_model->sendMessage($receiver,$message);
+				}
+				$this->load->view("ami/work/work4_one");			
 			}
 			else
 			{

@@ -17,7 +17,7 @@ if ($count == 4 ) :?>
 </tr>
 <?php endif ?>
 </table>
-<input type="textera" name="message" /><br />
+<input type="textera" name="message" rows="1000" cols="3000"/><br />
 <input type="submit" value="send" /><br />
 </form>
 </body>

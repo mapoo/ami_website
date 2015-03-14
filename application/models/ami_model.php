@@ -119,6 +119,11 @@ class Ami_model extends CI_Model {
 		return $query;
 	 }
 
+
+	 public function sendMessage($receiver, $message)
+	 {
+	 	
+	 }
 }
 
 ?>
