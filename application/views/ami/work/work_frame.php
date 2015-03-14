@@ -15,9 +15,13 @@ $(document).ready( function() {
 <body>
 <h1>This is the work space.</h1>
 <h3>Welcome,<?= $name?></h3>
-<button type="button" id="1">完善信息</button>
-<button type="button" id="2">招新情况</button>
-<button type="button" id="3">发送短信</button>
+<input value="完善信息" type="button" onClick="window.open('http://localhost/index.php/ami_work/completeinfo')">
+<input value="改变密码" type="button" onClick="window.open('http://localhost/index.php/ami_work/changepassword')">
+
+<?php if ($level == 0) {?>
+<input value="招新情况" type="button" onClick="window.open('http://localhost/index.php/ami_work/getnew')">
+<input value="发送短信" type="button" onClick="window.open('http://localhost/index.php/ami_work/delivertext')">
+<?php } ?>
 <br />
 <div id="board">
 <p>This is the working board.</p>

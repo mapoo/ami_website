@@ -67,7 +67,6 @@ $db['default']['stricton'] = FALSE;
 
 $db['SJTU_CA']['hostname'] = 'localhost';
 $db['SJTU_CA']['username'] = 'root';
-$db['SJTU_CA']['password'] = 'Bosson123456';
 $db['SJTU_CA']['database'] = 'SJTU_CA';
 $db['SJTU_CA']['dbdriver'] = 'mysql';
 $db['SJTU_CA']['dbprefix'] = '';
