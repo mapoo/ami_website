@@ -67,6 +67,7 @@ $db['default']['stricton'] = FALSE;
 
 $db['SJTU_CA']['hostname'] = 'localhost';
 $db['SJTU_CA']['username'] = 'root';
+$db['SJTU_CA']['password'] = 'Bosson123456';
 $db['SJTU_CA']['database'] = 'SJTU_CA';
 $db['SJTU_CA']['dbdriver'] = 'mysql';
 $db['SJTU_CA']['dbprefix'] = '';
@@ -83,7 +84,7 @@ $db['SJTU_CA']['stricton'] = FALSE;
 
 $db['ami']['hostname'] = 'localhost';
 $db['ami']['username'] = 'root';
-$db['ami']['password'] = '';
+$db['ami']['password'] = 'Bosson123456';
 $db['ami']['database'] = 'ami';
 $db['ami']['dbdriver'] = 'mysql';
 $db['ami']['dbprefix'] = '';
