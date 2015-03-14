@@ -16,29 +16,31 @@ class Ami_work extends CI_Controller {
 		}
 		else
 		{
-			if ( $this->input->post('name') != FALSE )	
 			if ( $this->input->post('name') != FALSE&&$this->input->post('email') != FALSE&&$this->input->post('cellphone') != FALSE &&$this->input->post('department') != FALSE)	
 			{
 				$data['para'] = "I get your form.";
 				$data['title'] = "WORK";
 				$id = $this->session->userdata('id');
 				$bag = array(
-					'name' => $this->input->post('name'),	
 					'name' => $this->input->post('name'),
 					'email' => $this->input->post('email'),
 					'cellphone' => $this->input->post('cellphone'),
 					'department' => $this->input->post('department')
 				);
 				$this->ami_model->updateById( $id, $bag );
+				/*
 				$this->session->unset_userdata("authenticated");
 				$this->session->unset_userdata("name");
 				$this->session->unset_userdata("level");
 				$this->session->unset_userdata("id");
-				redirect("http://localhost","location");
+				*/
+				$this->session->set_userdata("name",$this->input->post("name"));
+				redirect("http://localhost/index.php/ami_work/mainpage","location");
 				//update the databaselek
 				//redirect("url","location");
 			}
 			$data['title'] = "WORK";
+			/*
 			$temp=array(
 					$this->session->userdata('id'),
 					array('cellphone','name','email','department')
@@ -49,7 +51,9 @@ class Ami_work extends CI_Controller {
 			$data['cellphone']=$row['cellphone'];
 			$data['email']=$row['email'];
 			$data['department']=$row['department'];
-			$this->load->view('ami/work/work1',$data);
+			*/
+			//$this->load->view('ami/work/work1',$data);
+			redirect("http://localhost/index.php/ami_work/mainpage","location");
 		}
 		
 	}
@@ -206,10 +210,21 @@ class Ami_work extends CI_Controller {
 		{
 			$name = $this->session->userdata('name');
 			$level= $this->session->userdata('level');
-			$data['name']=$name;
+			$temp=array(
+					$this->session->userdata('id'),
+					array('cellphone','name','email','department')
+				);
+			$info = $this->ami_model->getInfoByIdSelect( $temp );
+			$row = $info->row_array();
+			$data['name']=$row['name'];
+			$data['cellphone']=$row['cellphone'];
+			$data['email']=$row['email'];
+			$data['department']=$row['department'];
 			$data['level']=$level;
+			$this->load->view("ami/header",$data);
 			$this->load->view("ami/work/work_frame",$data);
-			
+			$this->load->view("ami/work/work_1",$data);
+			$this->load->view("ami/footer",$data);
 
 		}
 				

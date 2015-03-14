@@ -1,5 +1,8 @@
 /*
+
+
 architecture
+workspace
 header
 newbie-list
 join-us
@@ -10,6 +13,10 @@ sign-up
 */
 
 html, body{height:100%; }
+
+
+
+
 
 *{
 	margin: 0;
@@ -26,7 +33,6 @@ html, body{height:100%; }
 
 .form-group{
 	width: 100%;
-	height: 70px;
 	float: left;
 }
 
@@ -34,10 +40,59 @@ ul{
 	list-style: none;
 	padding: 0px;
 }
+a:hover{
+		text-decoration: none;
+	}
+
+
+/*work-space*/
+#work-space .header{
+	background-color: #e6fdbd;
+	height: 40px;
+	border-radius: 5px;
+	line-height: 40px;
+	padding-left: 40px;
+	margin: 25px 0 100px 0;
+}
+
+#work-space .header ul li a{
+	float: left;
+	margin: 8px 0px 0 0;
+	height: 40px;
+	font-size: 18px;
+	color: #717171;
+	border-radius: 3px;
+	width: 100px;
+	text-align: center;
+}
+
+#work-space .header .active a{
+	background-color: #fff;
+}
+
+#change-info{
+	width: 520px;
+	margin: 0 auto;
+}
+
+	#change-info label{
+		font-size: 18px;
+		color: #717171;
+		font-family: 华文细黑;
+	}
+
+	#change-info input{
+		width: 300px;
+	}
+
+/*work-space ends*/
+
+
 /*header*/
 #header{
 	height: 60px;
 	border-bottom: 1px solid #ededed;
+	padding-left: 50px;
 
 }
 	#header img{

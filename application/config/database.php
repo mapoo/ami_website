@@ -83,7 +83,7 @@ $db['SJTU_CA']['stricton'] = FALSE;
 
 $db['ami']['hostname'] = 'localhost';
 $db['ami']['username'] = 'root';
-$db['ami']['password'] = 'Bosson123456';
+$db['ami']['password'] = '';
 $db['ami']['database'] = 'ami';
 $db['ami']['dbdriver'] = 'mysql';
 $db['ami']['dbprefix'] = '';
