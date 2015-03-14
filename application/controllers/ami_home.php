@@ -50,7 +50,7 @@ class Ami_home extends CI_Controller {
 					$data['email_taken']=TRUE;
 				}
 			}
-			//$this->load->view('ami/upright_login',$data);	
+			$this->load->view('ami/home/display_header',$data);	
 			$this->load->view('ami/home/display',$data);
 			//$this->load->view('ami/home/signup',$data);
 			//$this->load->view('ami/footer',$data);
