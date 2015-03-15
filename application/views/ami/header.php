@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title><?=$title?></title>
+	<title>ami</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="This is the homepage of Association of Mobile Internet @ Shanghai Jiaotong University">
 	<meta name="keyword" content="mobile, internet, SJTU, startup">
@@ -10,9 +10,9 @@
 </head>
 
 <div id="header">
-<div class="container">
-	<a href="http://localhost/#"><img src="/img/AMI.PNG" alt=""></a>
-</div>
+
+<a href="http://localhost/#"><img src="/img/AMI.png" alt=""></a>
+
 </div>
 
 <body>
