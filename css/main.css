@@ -46,6 +46,8 @@ a:hover{
 
 
 /*work-space*/
+
+
 #work-space .header{
 	background-color: #e6fdbd;
 	height: 40px;
@@ -59,7 +61,7 @@ a:hover{
 	float: left;
 	margin: 8px 0px 0 0;
 	height: 40px;
-	font-size: 18px;
+	font-size: 15px;
 	color: #717171;
 	border-radius: 3px;
 	width: 100px;
@@ -73,16 +75,26 @@ a:hover{
 #change-info{
 	width: 520px;
 	margin: 0 auto;
+	height: 50%;
 }
 
 	#change-info label{
 		font-size: 18px;
 		color: #717171;
 		font-family: 华文细黑;
+		text-align: right;
 	}
 
-	#change-info input{
+	#change-info input,#change-info select{
 		width: 300px;
+	}
+
+	#change-info [type=submit]{
+		background: none;
+		border:none;
+		float: left;
+		width: 50px;
+		padding-left: 20px;
 	}
 
 /*work-space ends*/

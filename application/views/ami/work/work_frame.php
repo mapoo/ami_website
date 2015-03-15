@@ -7,22 +7,21 @@ $(document).ready( function() {
 });
 </script>
 -->
+<div id="work-space">
+<div class="container">
+	<h3>Welcome,<?= $name?></h3>
 
-<body>
-<h1>This is the work space.</h1>
-<h3>Welcome,<?= $name?></h3>
-
-<a href="http://localhost/index.php/ami_work/mainpage">完善信息</a>
-<a href="http://localhost/index.php/ami_work/mainpage">改变密码</a>
-<?php if ($level == 0) {?>
-<a href="http://localhost/index.php/ami_work/mainpage">招新情况</a>
-<a href="http://localhost/index.php/ami_work/mainpage">发送短信</a>
-<?php } ?>
-<br />
-<!--
-<div id="board">
-<p>This is the working board.</p>
+	<div class="header">
+		<ul>
+		<li id="change-info-head"class="active" ><a href="http://localhost/index.php/ami_work/mainpage">完善信息</a></li>
+		<li id="change-password-head"class="" ><a href="http://localhost/index.php/ami_work/mainpage">改变密码</a></li>
+		
+	<?php if ($level == 0) {?>
+	<li><a href="http://localhost/index.php/ami_work/mainpage">招新情况</a></li>
+	<li><a href="http://localhost/index.php/ami_work/mainpage">发送短信</a></li>
+	<?php } ?>
+	</ul>
+	</div>
 </div>
--->
-
+</div>
 
